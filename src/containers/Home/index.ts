@@ -1,20 +1,15 @@
 import Home from './Home'
-import { HomeProps } from "./Home";
 
 import { connect } from 'react-redux'
-import store from "../../state/store";
 import { getUser } from '../../state/User/userActions';
 
-const state = store.getState();
 
-const HomePropsState: HomeProps = {
+const mapStateToProps = (state: any) => ({
     user: state.user,
-    getUser: getUser
-}
+  });
 
-function mapStateToProps(state: any) {
-    return HomePropsState;
-  }
+const mapDispatchToProps = {
+    getUser: getUser,
+};
 
-
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

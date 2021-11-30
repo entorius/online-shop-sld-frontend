@@ -4,7 +4,7 @@ import { GET_USER, setUser } from "./userActions";
 
 function* handleGetUser(action) {
     try {
-        const response = yield call(getUser)
+        const response = yield call(getUser);
         const { data } = response;
         yield put(setUser(data));
     } catch (error) {
