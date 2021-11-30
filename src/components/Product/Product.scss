@@ -1,0 +1,41 @@
+@import "../../styles/Constants";
+
+.itemContainer {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid $md-gray-main;
+    border-radius: 0 !important;
+}
+.productImage {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.productItemDescription{
+    margin: 0 5%;
+    height:60px;
+    width:90%;
+}
+.ratingBox {
+    display: flex;
+    justify-content: center;
+}
+.itemButton {
+    background-color: $md-purple-main !important;
+    width: 60%;
+    height: 35px;
+    margin-left: 20% !important;
+    margin-top: 15px !important;
+    font-size: 12px;
+    margin-bottom: 30px !important;
+
+    &:hover {
+        background-color: $md-purple-secondary !important;
+    }
+}
+.itemPrice {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 18px;
+}

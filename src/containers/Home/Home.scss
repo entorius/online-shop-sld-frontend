@@ -1,0 +1,171 @@
+@import "../../styles/Constants";
+
+//common styles
+.separatorPaperStyle {
+    width: 100%;
+    height: 100%;
+    text-align: center
+}
+
+// Extendable classes
+.px160Width{
+    width: 160px;
+}
+
+
+//Main wrapper styles
+.mainPage {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 1500px
+}
+
+//Top Bar styles
+.topBarButtonGrid {
+    width: 15%; 
+    min-width: 100px; 
+    height: 20px;
+}
+
+
+.topBar {
+    width: 100%; 
+    display: flex;
+}
+
+//Header (logo, search bar, login, register components) styles
+.headerInner {
+    display: flex; 
+    height: 100px; 
+    width: 100%;
+}
+
+
+.headerInnerLogoGrid {
+    display: flex; 
+    height: 100px; 
+    width: 250px;
+}
+
+
+.headerInnerSearchBarGrid {
+    display: flex; 
+    height: 100px; 
+    width: 800px
+}
+
+
+.headerInnerItemsBasketGrid {
+    display: flex; 
+    height: 100px; 
+    width: 80px
+}
+
+
+.headerInnerItemsLoginRegisterGrid {
+    display: flex; 
+    height: 100px; 
+    width: 350px;
+}
+.searchBarBox{
+    display:flex;
+}
+.searchBar {
+    display: flex !important;
+    margin: auto !important;
+    width: 500px;
+    height: 50px;
+}
+.searchBarInput {
+    width: 90% !important;
+    font-size: 15px !important;
+    padding-left: 10px !important;
+}
+.searchBarIconButton {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: $md-purple-main !important;
+    color: white !important;
+    margin: 6px !important;
+
+    &:hover {
+        background-color: $md-purple-secondary !important;
+    }
+}
+.searchBarIcon {
+    width: 20px !important;
+    height: 20px !important;
+}
+.loginButton {
+    background-color: $md-purple-main !important;
+    color: white !important;
+
+    @extend .px160Width;
+
+    &:hover {
+        background-color: $md-purple-secondary !important;
+    }
+}
+.registerButton {
+    background-color: white !important;
+    color: $md-purple-main !important;
+    @extend .px160Width;
+
+    &:hover {
+        color: $md-purple-secondary !important;
+    }
+}
+.loginRegisterButtonGrid {
+    margin-top: 15px;
+}
+// Main bar (All Items) styles
+.mainBar {
+    height: 60px; 
+    width: 100%; 
+    display: flex;
+}
+
+
+.mainBarAllItems {
+    height: 100%; 
+    width: 250px;
+}
+
+
+.mainBarMainBar {
+    height: 100%; 
+    width: 1250px;
+}
+
+// Anoucements square styles
+.anoucementsRow {
+    height: 700px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+
+
+.anoucementsRowAnoucement {
+    height: 100%; 
+    width: 1000px;
+}
+
+// Delivery information row styles
+.deliveyInformationRow {
+    display: flex; 
+    height: 100px; 
+    width: 100%;
+}
+
+
+.deliveyInformationRowInformation {
+    height: 100%; 
+    width:300px;
+}
+
+//Items Container
+.itemsContainer {
+    margin-top: 30px;
+    width: 100%;
+}
